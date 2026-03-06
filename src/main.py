@@ -2,18 +2,27 @@ import sys
 import lru
 import fifo
 
-with open("../data/example1.in") as file:
-    lines = file.readlines()
+files = ["../data/example1.in", 
+         "../data/example2.in", 
+         "../data/example3.in", 
+         "../data/example4.in"]
 
-first_line = lines[0].split()
-k = int (first_line[0])
-m = int (first_line[1])
+for path in files:
+    
+    with open(path) as file:
+        lines = file.readlines()
 
-second_line = lines[1].split()
-requests = []
+    first_line = lines[0].split()
+    k = int (first_line[0])
+    m = int (first_line[1])
 
-for request in second_line:
-    requests.append(int(request))
+    second_line = lines[1].split()
+    requests = []
 
-print("LRU  :", lru.lru(k, requests))
-print("FIFO :", fifo.fifo(k, requests))
+    for request in second_line:
+        requests.append(int(request))
+
+    print(path)
+    print("LRU  :", lru.lru(k, requests))
+    print("FIFO :", fifo.fifo(k, requests))
+    print()
