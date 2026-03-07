@@ -1,6 +1,7 @@
 import sys 
 import lru
 import fifo
+import optff
 
 files = ["../data/example1.in", 
          "../data/example2.in", 
@@ -25,4 +26,5 @@ for path in files:
     print(path)
     print("LRU  :", lru.lru(k, requests))
     print("FIFO :", fifo.fifo(k, requests))
+    print("OPTFF:", optff.optff(k, requests))
     print()
