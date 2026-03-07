@@ -42,4 +42,4 @@ python main.py
 - **Output:** The output is printed directly to standard output (the terminal) per the format in `main.py`. It shows the input file path followed by the results sequence for exactly three algorithms: LRU, FIFO, and OPTFF.
 
 ## Written Component Solutions
-[see pdf for solutions](Programming Assignment 2 (written component).pdf)
+[see pdf for solutions](Programming_Assignment_2_Written.pdf)
