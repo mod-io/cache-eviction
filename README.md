@@ -1,7 +1,7 @@
 # cache-eviction
 
 ## Student Information
-- **Name:** Steven Davis
+- **Name:** Stephen Davis
 - **UFID:** 63144483
 
 - **Name:** Sebastian Robalino-Ordonez
